@@ -1,0 +1,27 @@
+nav.navbar.navbar-fixed-bottom.navbar-inverse(role='navigation' ng-controller="VideoCtrl")
+  .container
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='#/') Delay:{{delay/1000}}, Time: {{timeVid}}, End: {{end}}
+    //
+       Collect the nav links, forms, and other content for toggling 
+    .collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li
+          a(href='#/news' ng-click="loadScene('news');") News
+        li
+          a(href='#/dates' ng-click="loadScene('dates');") Dates
+        li
+          a(href='#/photos' ng-click="loadScene('photos');") Photos
+        li
+          a(href='#/videos' ng-click="loadScene('videos');") Vidéos
+        li
+          a(href='#/contact' ng-click="loadScene('contact');") Contact
+    //
+       /.navbar-collapse 
+  //
+     /.container 

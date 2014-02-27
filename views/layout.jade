@@ -1,0 +1,20 @@
+doctype html
+html.full(ng-app="boumtchak")
+  head
+    //Adding meta data
+    include meta 
+  body
+    video.video-background(preload)
+      source(src='/vid/video-background.webm' type='video/webm')  
+      source(src='/vid/video-background.mp4' type='video/mp4')  
+      source(src='/vid/video-background.ogv' type='video/ogg')
+    .video-pattern
+    include navbar
+    #mainContainer.container(ng-view)
+      block content
+    //
+       JavaScript    
+    script(src='/bower_components/angular/angular.js')
+    script(src='/bower_components/angular-route/angular-route.js')
+    script(src='/bower_components/angular-animate/angular-animate.js')
+    script(src='/js/build.js')

@@ -1,0 +1,11 @@
+<div class="col-md-5 sectionContainer" >
+	<h1 class="text-center">{{title}}</h1>
+	<div class="article" ng-repeat="currentNews in currentNews">
+		<h3>{{currentNews.title}}</h3>
+		<h6>{{currentNews.saveDate}}</h6>
+		<hr>
+		<p class="newsContent">{{currentNews.content}}</p>
+	</div>
+	<button type="button" class="btn btn-default" ng-click="addNews()"> Add</button>
+</div>
+
